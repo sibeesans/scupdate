@@ -246,6 +246,7 @@ chmod +x backup
 chmod +x restore
 chmod +x jam
 chmod +x set-br
+chmod +x kyt
 
 chmod +x bot
 chmod +x add-bot-notif
