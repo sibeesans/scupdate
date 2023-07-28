@@ -404,12 +404,12 @@ echo -e " ${z}│$NC [${r}02${NC}]${CYAN} VMESS MENU$NC   ${z}│$NC [${r}09${NC
 echo -e " ${z}│$NC [${r}03${NC}]${CYAN} VLESS MENU$NC   ${z}│$NC [${r}10${NC}]${CYAN} INFO PORT$NC   ${z} │$NC [${r}17${NC}]${CYAN} RESTART     $NC${z}│$NC"   
 echo -e " ${z}│$NC [${r}04${NC}]${CYAN} TROJAN MENU$NC  ${z}│$NC [${r}11${NC}]${CYAN} SPEEDTEST$NC   ${z} │$NC [${r}18${NC}]${CYAN} DOMAIN      $NC${z}│$NC" 
 echo -e " ${z}│$NC [${r}05${NC}]${CYAN} SHADOW MENU$NC  ${z}│$NC [${r}12${NC}]${CYAN} RUNNING$NC     ${z} │$NC [${r}19${NC}]${CYAN} CERT SSL    $NC${z}│$NC"
-echo -e " ${z}│$NC [${r}06${NC}]${CYAN} TRIAL MENU$NC   ${z}│$NC [${r}13${NC}]${CYAN} VPS INFO$NC    ${z} │$NC [${r}20${NC}]${CYAN} INS. UDP    $NC${z}│$NC"
+echo -e " ${z}│$NC [${r}06${NC}]${CYAN} TRIALL MENU$NC  ${z}│$NC [${r}13${NC}]${CYAN} VPS INFO$NC    ${z} │$NC [${r}20${NC}]${CYAN} INS. UDP    $NC${z}│$NC"
 echo -e " ${z}│$NC [${r}07${NC}]${CYAN} UPDATE SCRIPT$NC${z}│$NC [${r}14${NC}]${CYAN} BOT NOTIF$NC   ${z} │$NC [${r}21${NC}]${CYAN} CLEAR CACHE $NC${z}│$NC"
-echo -e " ${z}│$NC [${r}22${NC}]${CYAN} SETTING MENU$NC ${z}│$NC [${r}23${NC}]${CYAN} BOT BACKUP$NC  ${z} │$NC [${r}24${NC}]${CYAN} ADD BOT PANEL $NC${z}│$NC"
+echo -e " ${z}│$NC [${r}22${NC}]${CYAN} SETTING MENU$NC ${z}│$NC [${r}23${NC}]${CYAN} BOT BACKUP$NC  ${z} │$NC [${r}24${NC}]${CYAN} BOT PANEL   $NC${z}│$NC"
 echo -e " ${z}│                                                          $NC${z}│$NC"
 echo -e " ${z}│$NC [${r}00${NC}]${CYAN} BACK TO EXIT MENU$NC ${KANAN} \E[0m\033[0;34m                              $NC${z}│$NC"
-echo -e " ${z}│$NC [${r}99${NC}]${CYAN} CHANGE BANNER VPS$NC ${KANAN} \E[0m\033[0;34m                              $NC${z}│$NC"
+echo -e " ${z}│$NC [${r}99${NC}]${CYAN} UBAH BANNER VPS$NC   ${KANAN} \E[0m\033[0;34m                              $NC${z}│$NC"
 echo -e " ${z}╰══════════════════════════════════════════════════════════╯${NC}"
 DATE=$(date +'%d %B %Y')
 datediff() {
