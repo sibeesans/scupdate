@@ -86,7 +86,6 @@ rm -rf del-vless
 rm -rf del-tr
 rm -rf user-lock
 rm -rf user-unlock
-rm -rf kyt
 # download script
 cd /usr/bin
 # menu
@@ -137,7 +136,6 @@ wget -O about "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/abo
 wget -O auto-reboot "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/auto-reboot.sh"
 wget -O restart "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/restart.sh"
 wget -O bw "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/bw.sh"
-wget -O kyt "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/kyt.sh"
 
 # change port
 wget -O port-ssl "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/port/port-ssl.sh"
