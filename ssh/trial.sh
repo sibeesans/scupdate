@@ -88,7 +88,7 @@ echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m"
 echo -e "» Username         : $Login" | tee -a /etc/log-create-user.log
 echo -e "» Password         : $Pass" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "» Host             : $domen" | tee -a /etc/log-create-user.log
+echo -e "» Host             : ${domen}" | tee -a /etc/log-create-user.log
 echo -e "» Host Slowdns     : $sldomain" | tee -a /etc/log-create-user.log
 echo -e "» Port UdpSSH      : 1-65535" | tee -a /etc/log-create-user.log                 
 echo -e "» Port DNS         : 443, 53, 22" | tee -a /etc/log-create-user.log
@@ -106,11 +106,11 @@ echo -e "» Port Squid       : 3128" | tee -a /etc/log-create-user.log
 echo -e "» BadVPN UPDGW     : 7100, 7200, 7300" | tee -a /etc/log-create-user.log
 echo -e "» PubKey           : $slkey" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "» Payload WSS      : GET / HTTP/1.1[crlf]Host: $domen[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log  
+echo -e "» Payload WSS      : GET / HTTP/1.1[crlf]Host: ${domen}[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log  
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "» OVPN Download    : https://$domen:81/" | tee -a /etc/log-create-user.log
+echo -e "» OVPN Download    : https://${domen}:81/" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "» Save Link Account: https://$domain:81/ssh-$Login.txt" | tee -a /etc/log-create-user.log
+echo -e "» Save Link Account: https://${domen}:81/ssh-$Login.txt" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 echo -e "» Expired Until : $expe" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
