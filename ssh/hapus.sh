@@ -44,5 +44,4 @@ fi
 fi
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 read -n 1 -s -r -p "Press any key to back on menu"
-fi
 menu
