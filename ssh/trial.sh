@@ -83,7 +83,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 else
 
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "  ( Trial SSH OVPN Account )" | tee -a /etc/log-create-user.log
+echo -e " ( Trial SSH OVPN Account )" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 echo -e "» Username         : $Login" | tee -a /etc/log-create-user.log
 echo -e "» Password         : $Pass" | tee -a /etc/log-create-user.log
