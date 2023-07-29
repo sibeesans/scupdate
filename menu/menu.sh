@@ -411,7 +411,7 @@ echo -e " ${z}│$NC [${r}00${NC}]${CYAN} BACK TO EXIT MENU$NC ${KANAN} \E[0m\03
 echo -e " ${z}│$NC [${r}99${NC}]${CYAN} UBAH BANNER VPS$NC   ${KANAN} \E[0m\033[0;34m                              $NC${z}│$NC"
 echo -e " ${z}╰══════════════════════════════════════════════════════════╯${NC}"
 echo -e "${z} ╭══════════════════════════════════════════════════════════╮${NC}"
-echo -e "${z} │$NC    ${CYAN}HARI ini${NC}: ${r}$ttoday$NC    ${CYAN}KEMARIN${NC}: ${r}$tyest$NC    ${CYAN}BULAN${NC}: ${r}$tmon$NC $NC"
+echo -e "${z} │$NC ${CYAN}HARI ini${NC}: ${r}$ttoday$NC    ${CYAN}KEMARIN${NC}: ${r}$tyest$NC    ${CYAN}BULAN${NC}: ${r}$tmon$NC $NC"
 echo -e "${z} ╰══════════════════════════════════════════════════════════╯${NC}"
 DATE=$(date +'%d %B %Y')
 datediff() {
@@ -423,7 +423,7 @@ mai="datediff "$Exp" "$DATE""
 echo -e " ${z}╭══════════════════════════════════════════════════════════╮${NC}"
 echo -e " ${z}│${NC}${z}Version       $blue=${NC} V1.0 Lite${NC}"
 echo -e " ${z}│${NC}${z}User          $blue=${NC}\033[1;36m $Name \e[0m"
-echo -e " ${z}│${NC}${z}Script Status $blue=${NC} (${green}Aktive${NC}) ${NC}"
+echo -e " ${z}│${NC}${z}Script Status $blue=${NC} ( ${green}Aktive${NC} ) ${NC}"
 if [ $exp \< 1000 ];
 then
 echo -e "   $z│$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
