@@ -36,7 +36,7 @@ echo -e "   [Error] Username cannot be empty "
 else
 if getent passwd $Pengguna > /dev/null 2>&1; then
 userdel $Pengguna > /dev/null 2>&1
-sed -i "s/$Pengguna//g" /etc/xray/ssh.txt
+sed -i "s/$Pengguna//g"
 echo -e "   [INFO] User $Pengguna was removed."
 else
 echo -e "   [INFO] Failure: User $Pengguna Not Exist."
