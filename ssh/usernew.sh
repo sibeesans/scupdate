@@ -209,34 +209,34 @@ Berakhir Pada        : $expe
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 echo ""
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e " ( SSH OVPN Account )" | tee -a /etc/log-create-user.log
+echo -e " ⟨ SSH OVPN Account ⟩" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "» Username         : $Login" | tee -a /etc/log-create-user.log
-echo -e "» Password         : $Pass" | tee -a /etc/log-create-user.log
+echo -e "» Username        : $Login" | tee -a /etc/log-create-user.log
+echo -e "» Password        : $Pass" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "» Host             : $domain" | tee -a /etc/log-create-user.log
-echo -e "» Host Slowdns     : $sldomain" | tee -a /etc/log-create-user.log
-echo -e "» PubKey           : $slkey" | tee -a /etc/log-create-user.log
-echo -e "» Port UdpSSH      : 1-65535" | tee -a /etc/log-create-user.log                 
-echo -e "» Port DNS         : 443, 53, 22" | tee -a /etc/log-create-user.log
-echo -e "» Port OpenSSH     : 443, 80, 22" | tee -a /etc/log-create-user.log
-echo -e "» Port Dropbear    : 80, 443, 143" | tee -a /etc/log-create-user.log
-echo -e "» Port Dropbear WS : 443, 109" | tee -a /etc/log-create-user.log
-echo -e "» Port SSH WS      : 80, 8080" | tee -a /etc/log-create-user.log
-echo -e "» Port SSH SSL     : 443" | tee -a /etc/log-create-user.log
-echo -e "» Port SSL/TLS     : 443" | tee -a /etc/log-create-user.log
-echo -e "» Port OVPN WS SSL : 443" | tee -a /etc/log-create-user.log
-echo -e "» Port OVPN SSL    : 443" | tee -a /etc/log-create-user.log
-echo -e "» Port OVPN TCP    : 443, 1194" | tee -a /etc/log-create-user.log
-echo -e "» Port OVPN UDP    : 2200" | tee -a /etc/log-create-user.log
-echo -e "» Port Squid       : 3128" | tee -a /etc/log-create-user.log
-echo -e "» BadVPN UDPGW     : 7100, 7200, 7300" | tee -a /etc/log-create-user.log
+echo -e "» Host            : $domain" | tee -a /etc/log-create-user.log
+echo -e "» Host Slowdns    : $sldomain" | tee -a /etc/log-create-user.log
+echo -e "» Port UdpSSH     : 1-65535" | tee -a /etc/log-create-user.log                 
+echo -e "» Port DNS        : 443, 53, 22" | tee -a /etc/log-create-user.log
+echo -e "» Port OpenSSH    : 443, 80, 22" | tee -a /etc/log-create-user.log
+echo -e "» Port Dropbear   : 443, 109" | tee -a /etc/log-create-user.log
+echo -e "» Port Dropbear WS: 443, 109" | tee -a /etc/log-create-user.log
+echo -e "» Port SSH WS     : 80, 8080" | tee -a /etc/log-create-user.log
+echo -e "» Port SSH SSL    : 443" | tee -a /etc/log-create-user.log
+echo -e "» Port SSL/TLS    : 443" | tee -a /etc/log-create-user.log
+echo -e "» Port OVPN WS SSL: 443" | tee -a /etc/log-create-user.log
+echo -e "» Port OVPN SSL   : 443" | tee -a /etc/log-create-user.log
+echo -e "» Port OVPN TCP   : 443, 1194" | tee -a /etc/log-create-user.log
+echo -e "» Port OVPN UDP   : 2200" | tee -a /etc/log-create-user.log
+echo -e "» Proxy Squid     : 3128" | tee -a /etc/log-create-user.log
+echo -e "» BadVPN UDP      : 7100, 7200, 7300" | tee -a /etc/log-create-user.log
+echo -e "» PubKey          : $slkey" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "» Payload WSS      : GET / HTTP/1.1[crlf]Host: $domain[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log  
+echo -e "» Payload WSS     : GET wss://BUG.COM/ HTTP/1.1[crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log  
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "» OVPN Download    : https://$domain:81/" | tee -a /etc/log-create-user.log
+echo -e "» Link OpenVPN    : https://$domain:81/" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "» Save Link Account: https://$domain:81/ssh-$Login.txt" | tee -a /etc/log-create-user.log
+echo -e "» Save Link Account : https://$domain:81/ssh-$Login.txt" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 echo -e "» Expired Until  : $expe" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
