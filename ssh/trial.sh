@@ -102,6 +102,7 @@ echo -e "» Port OVPN WS SSL : 443" | tee -a /etc/log-create-user.log
 echo -e "» Port OVPN SSL    : 443" | tee -a /etc/log-create-user.log
 echo -e "» Port OVPN TCP    : 443" | tee -a /etc/log-create-user.log
 echo -e "» Port OVPN UDP    : 2200" | tee -a /etc/log-create-user.log
+echo -e "» Port Squid       : 3128" | tee -a /etc/log-create-user.log
 echo -e "» BadVPN UPDGW     : 7100, 7200, 7300" | tee -a /etc/log-create-user.log
 echo -e "» PubKey           : $slkey" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
