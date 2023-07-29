@@ -240,7 +240,6 @@ echo -e "» Save Link Account : https://$domain:81/ssh-$Login.txt" | tee -a /etc
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 echo -e "» Expired Until  : $expe" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-fi
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
