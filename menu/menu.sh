@@ -371,6 +371,7 @@ else
     ssh=$(cat /etc/ssh/.ssh.db | grep "#ssh1#" | wc -l)
 fi
 clear
+figlet  'YogzSTORE'
 echo -e " ${z}╭══════════════════════════════════════════════════════════╮${NC}"
 echo -e " ${z}│$NC\033[41m         Welcome To Script Premium YogzVpn Store          $NC${z}│$NC"
 echo -e " ${z}╰══════════════════════════════════════════════════════════╯${NC}"
@@ -410,9 +411,6 @@ echo -e " ${z}│                                                          $NC${
 echo -e " ${z}│$NC [${r}00${NC}]${CYAN} BACK TO EXIT MENU$NC ${KANAN} \E[0m\033[0;34m                              $NC${z}│$NC"
 echo -e " ${z}│$NC [${r}99${NC}]${CYAN} UBAH BANNER VPS$NC   ${KANAN} \E[0m\033[0;34m                              $NC${z}│$NC"
 echo -e " ${z}╰══════════════════════════════════════════════════════════╯${NC}"
-echo -e "${z} ╭══════════════════════════════════════════════════════════╮${NC}"
-echo -e "${z} │$NC ${CYAN}HARI ini${NC}: ${r}$ttoday$NC    ${CYAN}KEMARIN${NC}: ${r}$tyest$NC    ${CYAN}BULAN${NC}: ${r}$tmon$NC $NC"
-echo -e "${z} ╰══════════════════════════════════════════════════════════╯${NC}"
 DATE=$(date +'%d %B %Y')
 datediff() {
     d1=$(date -d "$1" +%s)
