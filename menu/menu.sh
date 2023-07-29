@@ -371,7 +371,7 @@ else
     ssh=$(cat /etc/ssh/.ssh.db | grep "#ssh1#" | wc -l)
 fi
 clear
-figlet  'YogzSTORE'
+figlet       'YogzSTORE' | lolcat
 echo -e " ${z}╭══════════════════════════════════════════════════════════╮${NC}"
 echo -e " ${z}│$NC\033[41m         Welcome To Script Premium YogzVpn Store          $NC${z}│$NC"
 echo -e " ${z}╰══════════════════════════════════════════════════════════╯${NC}"
