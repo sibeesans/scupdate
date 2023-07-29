@@ -209,7 +209,7 @@ Berakhir Pada        : $expe
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 echo ""
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "   ( SSH OVPN Account )" | tee -a /etc/log-create-user.log
+echo -e " ( SSH OVPN Account )" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 echo -e "» Username         : $Login" | tee -a /etc/log-create-user.log
 echo -e "» Password         : $Pass" | tee -a /etc/log-create-user.log
@@ -238,6 +238,6 @@ echo -e "» OVPN Download    : https://$domain:81/" | tee -a /etc/log-create-use
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 echo -e "» Save Link Account: https://$domain:81/ssh-$Login.txt" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "» Expired Until : $expe" | tee -a /etc/log-create-user.log
+echo -e "» Expired Until  : $expe" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 echo "" | tee -a /etc/log-create-user.log
