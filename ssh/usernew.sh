@@ -216,6 +216,7 @@ echo -e "» Password         : $Pass" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 echo -e "» Host             : $domain" | tee -a /etc/log-create-user.log
 echo -e "» Host Slowdns     : $sldomain" | tee -a /etc/log-create-user.log
+echo -e "» PubKey           : $slkey" | tee -a /etc/log-create-user.log
 echo -e "» Port UdpSSH      : 1-65535" | tee -a /etc/log-create-user.log                 
 echo -e "» Port DNS         : 443, 53, 22" | tee -a /etc/log-create-user.log
 echo -e "» Port OpenSSH     : 443, 80, 22" | tee -a /etc/log-create-user.log
@@ -230,7 +231,6 @@ echo -e "» Port OVPN TCP    : 443, 1194" | tee -a /etc/log-create-user.log
 echo -e "» Port OVPN UDP    : 2200" | tee -a /etc/log-create-user.log
 echo -e "» Port Squid       : 3128" | tee -a /etc/log-create-user.log
 echo -e "» BadVPN UDPGW     : 7100, 7200, 7300" | tee -a /etc/log-create-user.log
-echo -e "» PubKey           : $slkey" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 echo -e "» Payload WSS      : GET / HTTP/1.1[crlf]Host: $domain[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log  
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
