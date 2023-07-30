@@ -33,8 +33,8 @@ red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 # Getting
 AKUN="AKUN SSH"
 TIMES="10"
-CHATID="-922222061"
-KEY="6383900821:AAGrdOhs_cJ9ILZUUofrrfHyQLK2r0yMkcU"
+CHATID="5795571992"
+KEY="6079069898:AAGT8hggC62cVoeKq1Q1k37sWj2Bys5NL1M"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 hariini=`date -d "0 days" +"%Y-%m-%d"`
 clear
