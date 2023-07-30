@@ -83,7 +83,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 else
 
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e " ⟨ TRIAL SSH OVPN Account ⟩" | tee -a /etc/log-create-user.log
+echo -e "\e[33m⟨ TRIAL SSH OVPN Account ⟩" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 echo -e "» Username        : $Login" | tee -a /etc/log-create-user.log
 echo -e "» Password        : $Pass" | tee -a /etc/log-create-user.log
@@ -112,7 +112,7 @@ echo -e "» Link OpenVPN    : https://$(cat /etc/xray/domain):81/" | tee -a /etc
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 echo -e "» Save Link Account : https://$(cat /etc/xray/domain):81/ssh-$Login.txt" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "» Expired Until  : $expe" | tee -a /etc/log-create-user.log
+echo -e "» Expired Until  : $exp" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 fi
 echo ""
