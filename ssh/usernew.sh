@@ -174,7 +174,7 @@ OVPN Download : https://$domain:81/
 END
 TEXT="
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code>   SSH OVPN Account   </code>
+<code>   SSH OVPN Account    </code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code>Username         : </code> <code>$Login</code>
 <code>Password         : </code> <code>$Pass</code>
@@ -202,7 +202,9 @@ TEXT="
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code>Save Link Account: </code>https://$domain:81/ssh-$Login.txt
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code>Expired Until        : $expe</code>
+Aktif Selama   : $masaaktif Hari
+Dibuat Pada    : $tnggl
+Berakhir Pada  : $expe
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 "
 
