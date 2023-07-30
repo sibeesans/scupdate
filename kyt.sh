@@ -37,7 +37,7 @@ echo -e PUB='"'$PUB'"' >> /usr/bin/kyt/var.txt
 echo -e HOST='"'$NS'"' >> /usr/bin/kyt/var.txt
 clear
 
-cat > /etc/system/kyt.service << END
+cat > /etc/systemd/system/kyt.service << END
 [Unit]
 Description=Simple kyt - @kyt
 After=network.target
