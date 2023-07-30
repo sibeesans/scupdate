@@ -41,8 +41,8 @@ red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 # Getting
 AKUN="AKUN SSH"
 TIMES="10"
-CHATID="-922222061"
-KEY="6383900821:AAGrdOhs_cJ9ILZUUofrrfHyQLK2r0yMkcU"
+CHATID="5795571992"
+KEY="6651457888:AAGkXpQn6IpYifC8rqmO9tEh7ML4eX-MmQI"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 hariini=`date -d "0 days" +"%Y-%m-%d"`
 clear
@@ -89,11 +89,11 @@ clear
 echo -e "\033[1;93m◇━━━━━━━━━━━━━━━━━◇\033[0m"
 echo -e " SSH OVPN Account           "
 echo -e "\033[1;93m◇━━━━━━━━━━━━━━━━━◇\033[0m"
-read -p " Username : " Login
-read -p " Password : " Pass
-read -p " Limit IP : " iplimit
-read -p " Quota    : " Quota
-read -p " Expired (Hari) : " masaaktif
+read -p " Username    : " Login
+read -p " Password    : " Pass
+read -p " Limit (IP)  : " iplimit
+read -p " Limit Quota : " Quota
+read -p " Exp (Hari)  : " masaaktif
 limitip
 if [[ $iplimit -gt 0 ]]; then
 echo -e "$iplimit" > /etc/kyt/limit/ssh/ip/$Login
@@ -209,7 +209,7 @@ Berakhir Pada        : $expe
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 echo ""
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e " ⟨ SSH OVPN Account ⟩" | tee -a /etc/log-create-user.log
+echo -e "\e[33m⟨ SSH OVPN Account ⟩" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 echo -e "» Username        : $Login" | tee -a /etc/log-create-user.log
 echo -e "» Password        : $Pass" | tee -a /etc/log-create-user.log
