@@ -415,13 +415,13 @@ DATE=$(date +'%d %B %Y')
 datediff() {
     d1=$(date -d "$1" +%s)
     d2=$(date -d "$2" +%s)
-    echo -e " ${z}│${NC}${z}Expiry Script $blue=${NC} ${green}$exp ${NC}( ${r}$(( (d1 - d2) / 86400 )) ${NC}Days ) $NC"
+    echo -e " ${z}│${NC}${z}Expiry Script $blue=${NC} ${BIGreen}$exp ${NC}( ${r}$(( (d1 - d2) / 86400 )) ${NC}Days ) $NC"
 }
 mai="datediff "$Exp" "$DATE""
 echo -e " ${z}╭══════════════════════════════════════════════════════════╮${NC}"
 echo -e " ${z}│${NC}${z}Version       $blue=${NC} V1.0 Lite${NC}"
 echo -e " ${z}│${NC}${z}User          $blue=${NC}\033[1;36m $Name \e[0m"
-echo -e " ${z}│${NC}${z}Script Status $blue=${NC} ( ${green}Aktive${NC} ) ${NC}"
+echo -e " ${z}│${NC}${z}Script Status $blue=${NC} ( ${BIGreen}Aktive${NC} ) ${NC}"
 if [ $exp \< 1000 ];
 then
 echo -e "   $z│$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
