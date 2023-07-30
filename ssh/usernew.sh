@@ -92,7 +92,7 @@ echo -e "\033[1;93m◇━━━━━━━━━━━━━━━━━◇\033
 read -p " Username    : " Login
 read -p " Password    : " Pass
 read -p " Limit (IP)  : " iplimit
-read -p " Limit Quota : " Quota
+read -p " Quota (GB)  : " Quota
 read -p " Exp (Hari)  : " masaaktif
 limitip
 if [[ $iplimit -gt 0 ]]; then
@@ -174,7 +174,7 @@ OVPN Download : https://$domain:81/
 END
 TEXT="
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code> ▫️️☘SSH OVPN Account▫️️☘ </code>
+<code>   SSH OVPN Account   </code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code>Username         : </code> <code>$Login</code>
 <code>Password         : </code> <code>$Pass</code>
