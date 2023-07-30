@@ -176,33 +176,33 @@ TEXT="
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code> ▫️️☘SSH OVPN Account▫️️☘ </code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code>🔰Username         : </code> <code>$Login</code>
-<code>🔰Password         : </code> <code>$Pass</code>
+<code>Username         : </code> <code>$Login</code>
+<code>Password         : </code> <code>$Pass</code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code>🔰Host             : </code> <code>$domain</code>
-<code>🔰Host Slowdns     : </code> </code>$sldomain</code>
-<code>🔰Port UdpSSH      : 1-65535 </code>
-<code>🔰Port DNS         : 443, 53, 22</code>
-<code>🔰Port OpenSSH     : 443, 80, 22</code>
-<code>🔰Port Dropbear    : 443, 109</code>
-<code>🔰Port SSH WS      : 80, 8080, 8081-9999 </code>
-<code>🔰Port SSH SSL WS  : 443</code>
-<code>🔰Port SSL/TLS     : 443</code>
-<code>🔰Port OVPN WS SSL : 443</code>
-<code>🔰Port OVPN SSL    : 443</code>
-<code>🔰Port OVPN TCP    : 443, 1194</code>
-<code>🔰Port OVPN UDP    : 2200</code>
-<code>🔰Proxy Squid      : 3128</code>
-<code>🔰BadVPN UDP       : 7100, 7300, 7300</code>
-<code>🔰PubKey           : </code> </code>$slkey</code>
+<code>Host             : </code> <code>$domain</code>
+<code>Host Slowdns     : </code> </code>$sldomain</code>
+<code>Port UdpSSH      : 1-65535 </code>
+<code>Port DNS         : 443, 53, 22</code>
+<code>Port OpenSSH     : 443, 80, 22</code>
+<code>Port Dropbear    : 443, 109</code>
+<code>Port SSH WS      : 80, 8080, 8081-9999 </code>
+<code>Port SSH SSL WS  : 443</code>
+<code>Port SSL/TLS     : 443</code>
+<code>Port OVPN WS SSL : 443</code>
+<code>Port OVPN SSL    : 443</code>
+<code>Port OVPN TCP    : 443, 1194</code>
+<code>Port OVPN UDP    : 2200</code>
+<code>Proxy Squid      : 3128</code>
+<code>BadVPN UDP       : 7100, 7300, 7300</code>
+<code>PubKey           : </code> </code>$slkey</code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code>🔰Payload WSS      : </code><code>GET wss://BUG.COM/ HTTP/1.1[crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf]</code>
+<code>Payload WSS      : </code><code>GET wss://BUG.COM/ HTTP/1.1[crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf]</code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code>🔰Link OpenVPN : </code>https://$domain:81/
+<code>Link OpenVPN : </code>https://$domain:81/
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code>🔰Save Link Account: </code>https://$domain:81/ssh-$Login.txt
+<code>Save Link Account: </code>https://$domain:81/ssh-$Login.txt
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code>🔰Expired Until        : $expe</code>
+<code>Expired Until        : $expe</code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 "
 
