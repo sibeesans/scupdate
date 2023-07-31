@@ -17,5 +17,4 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 echo "Dont forget to renew genssl"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-fi
 genssl
