@@ -7,7 +7,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 
 clear
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e " ${COLBG1}             HAPUS SSH USER           ${NC} "
+echo -e " ${COLBG1}             HAPUS USER SSH           ${NC} "
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"    
 echo "   USERNAME        EXP DATE        STATUS"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"  
@@ -32,7 +32,7 @@ echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━�
 read -p "   Username : " Pengguna
 
 if [ -z $Pengguna ]; then
-echo -e "   [Error] Username cannot be empty "
+echo -e "   [Error] Username tidak boleh kosong "
 else
 if getent passwd $Pengguna > /dev/null 2>&1; then
 userdel $Pengguna > /dev/null 2>&1
