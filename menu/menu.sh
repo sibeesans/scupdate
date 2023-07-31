@@ -440,7 +440,7 @@ case $opt in
 05 | 5) clear ; shadowsocks ;;
 06 | 6) clear ; menu-trial ;;
 07 | 7) clear ; up ;;
-08 | 8) clear ; xp ;;
+08 | 8) clear ; delete ;;
 09 | 9) clear ; auto-reboot ;;
 10) clear ; about ;;
 11) clear ; speedtest ;;
