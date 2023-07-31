@@ -70,7 +70,7 @@ clear
 domain=$(cat /etc/xray/domain)
 masaaktif=1
 Quota=5
-user=Trial-VM`</dev/urandom tr -dc 0-9 | head -c3`
+user=trial-`</dev/urandom tr -dc 0-9 | head -c3`
 clear 
 uuid=$(cat /proc/sys/kernel/random/uuid)
 exp=$(date -d "$masaaktif days" +"%Y-%m-%d")
@@ -241,7 +241,8 @@ CHATID="$CHATID"
 KEY="$KEY"
 TIME="$TIME"
 URL="$URL"
-TEXT="<code>◇━━━━━━━━━━━━━━━━━◇</code>
+TEXT="
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code>      XRAY/VMESS</code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code>Remarks   : ${user}
@@ -309,5 +310,4 @@ echo -e "Berakhir Pada    : $expe"
 echo -e "\033[0;34m◇━━━━━━━━━━━━━━━━━◇\033[0m"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-
-menu-vmess
+menu
