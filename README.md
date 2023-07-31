@@ -21,9 +21,6 @@ LIFETIME: 150K
 ### INSTALL SCRIPT
 <pre><code>apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://www.yogztrx.site/yogzasu.sh && chmod +x yogzasu.sh && screen -S install ./yogzasu.sh</code></pre>
 
-### PERINTAH UPDATE 
-<pre><code>wget https://www.yogztrx.site/up.sh && chmod +x up.sh && ./up.sh</code></pre>
-
 ### TESTED ON OS 
 - UBUNTU 20.04.05
 - DEBIAN 10
