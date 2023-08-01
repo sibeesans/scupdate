@@ -252,6 +252,9 @@ wget -O set-br "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/backup/
 wget -O jam "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/jam.sh"
 chmod +x *
 chmod +x add-bot-panel
+chmod +x hapus-bot
+chmod +x stop-bot
+chmod +x restart-bot
 chmod +x menu
 chmod +x shadowsocks
 chmod +x menu-trial
