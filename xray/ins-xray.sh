@@ -642,7 +642,7 @@ wget -O cektrgo "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/xray/c
 
 # shadowsock
 wget -O add-ss "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/xray/add-ss.sh" && chmod +x add-ss
-wget -O triall-ss "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/xray/triall-ss.sh" && chmod triall-ss
+wget -O trial-ss "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/xray/trial-ss.sh" && chmod trial-ss
 wget -O del-ss "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/xray/del-ss.sh" && chmod +x del-ss
 wget -O renew-ss "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/xray/renew-ss.sh" && chmod +x renew-ss
 wget -O cek-ss "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/xray/cek-ss.sh" && chmod +x cek-ss
