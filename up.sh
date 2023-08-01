@@ -86,15 +86,9 @@ rm -rf del-vless
 rm -rf del-tr
 rm -rf user-lock
 rm -rf user-unlock
-rm -rf hapus-bot
-rm -rf stop-bot
-rm -rf restart-bot
 # download script
 cd /usr/bin
 # menu
-wget -O hapus-bot "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/hapus-bot.sh"
-wget -O stop-bot "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/stop-bot.sh"
-wget -O restart-bot "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/restart-bot.sh"
 wget -O menu "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/menu.sh"
 wget -O add-vless "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/add-vless.sh"
 wget -O genssl "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/genssl.sh"
@@ -191,9 +185,6 @@ wget -O del-vless "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/xray
 wget -O del-tr "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/xray/del-tr.sh"
 
 
-chmod +x hapus-bot
-chmod +x stop-bot
-chmod +x restart-bot
 chmod +x menu
 chmod +x menu-trial
 chmod +x menu-vmess
