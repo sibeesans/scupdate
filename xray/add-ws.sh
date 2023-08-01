@@ -31,7 +31,7 @@ LIGHT='\033[0;37m'
 grenbo="\e[92;1m"
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 # Getting
-AKUN="AKUN SSH"
+AKUN="AKUN VMESS"
 TIMES="10"
 CHATID="5795571992"
 KEY="6079069898:AAGT8hggC62cVoeKq1Q1k37sWj2Bys5NL1M"
