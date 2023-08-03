@@ -69,7 +69,7 @@ case $opt in
 7) clear ; restart ; exit ;;
 8) clear ; nano /etc/issue.net ; exit ;; #ssh-vpn banner.conf
 9) clear ; bw ; exit ;;
-10) clear ; wget https://raw.githubusercontent.com/www.vip-anuku.xyz/install.sh && chmod +x install.sh && ./install.sh ;;
+10) clear ; wget https://raw.githubusercontent.com/YOGZPRO/xolpanel/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo -e "" ; echo "Anda salah tekan" ; sleep 1 ; menu-set ;;
