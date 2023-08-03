@@ -380,10 +380,10 @@ echo -e " ${z}╭═════════════════════
 echo -e " ${z}│$NC$r ⇲ $NC${z} OS            $blue=$NC $MODEL${NC}"
 echo -e " ${z}│$NC$r ⇲ $NC${z} RAM           $blue=$NC $USAGERAM MB ${NC}"
 echo -e " ${z}│$NC$r ⇲ $NC${z} SWAP          $blue=$NC $RAM MB ${NC}"
-echo -e " ${z}│$NC$r ⇲ $NC${z} ISP           $blue=$NC $(cat /etc/xray/isp)${NC}"
-echo -e " ${z}│$NC$r ⇲ $NC${z} CITY          $blue=$NC $(cat /etc/xray/city)${NC}"
+echo -e " ${z}│$NC$r ⇲ $NC${z} ISP           $blue=$NC $ISP${NC}"
+echo -e " ${z}│$NC$r ⇲ $NC${z} CITY          $blue=$NC $CITY${NC}"
 echo -e " ${z}│$NC$r ⇲ $NC${z} IP            $blue=$NC $MYIP${NC}"
-echo -e " ${z}│$NC$r ⇲ $NC${z} DOMAIN        $blue=$NC $(cat /etc/xray/domain)${NC}"
+echo -e " ${z}│$NC$r ⇲ $NC${z} DOMAIN        $blue=$NC $domain${NC}"
 echo -e " ${z}│$NC$r ⇲ $NC${z} UPTIME        $blue=$NC $uptime${NC}"
 echo -e " ${z}╰══════════════════════════════════════════════════════════╯${NC}"
 echo -e "                ${KIRI} ${CYAN}INFORMATION ACCOUNT${NC} ${KANAN}"
@@ -420,7 +420,7 @@ datediff() {
 }
 mai="datediff "$Exp" "$DATE""
 echo -e " ${z}╭══════════════════════════════════════════════════════════╮${NC}"
-echo -e " ${z}│${NC}${z}Version       $blue=${NC} $( cat /home/.ver) Last Update${NC}"
+echo -e " ${z}│${NC}${z}Version       $blue=${NC} 1.0 Last Update${NC}"
 echo -e " ${z}│${NC}${z}User          $blue=${NC}\033[1;36m $Name \e[0m"
 echo -e " ${z}│${NC}${z}Script Status $blue=${NC} (${BIGreen}Aktive${NC}) ${NC}"
 if [ $exp \< 1000 ];
