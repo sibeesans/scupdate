@@ -70,7 +70,7 @@ clear
 domain=$(cat /etc/xray/domain)
 masaaktif=1
 Quota=5
-user=Trial-TR`</dev/urandom tr -dc 0-9 | head -c3`
+user=trial-`</dev/urandom tr -dc 0-9 | head -c3`
 clear
 uuid=$(cat /proc/sys/kernel/random/uuid)
 exp=$(date -d "$masaaktif days" +"%Y-%m-%d")
