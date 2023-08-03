@@ -313,8 +313,8 @@ echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
-export sem=$( curl -s https://raw.githubusercontent.com/YOGZKNTL/regip/main/versions)
-export pak=$( cat /home/.ver)
+export sem=$( curl -s https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/version)
+export pak=$(cat /opt/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 #################
 r="\033[1;31m"  #REDTERANG
@@ -421,7 +421,7 @@ datediff() {
 }
 mai="datediff "$Exp" "$DATE""
 echo -e " ${z}╭══════════════════════════════════════════════════════════╮${NC}"
-echo -e " ${z}│${NC}${z}Version       $blue=${NC} $( cat /home/.ver) Latest Update${NC}"
+echo -e " ${z}│${NC}${z}Version       $blue=${NC} $(cat /opt/.ver) Latest Update${NC}"
 echo -e " ${z}│${NC}${z}User          $blue=${NC}\033[1;36m $Name \e[0m"
 echo -e " ${z}│${NC}${z}Script Status $blue=${NC} ( ${BIGreen}Aktive${NC} ) ${NC}"
 if [ $exp \< 1000 ];
