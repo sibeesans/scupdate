@@ -314,7 +314,7 @@ read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
 export sem=$( curl -s https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/version)
-export pak=$(cat /opt/.ver)
+export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 #################
 r="\033[1;31m"  #REDTERANG
@@ -379,13 +379,13 @@ echo -e " ${z}╰═════════════════════
 echo -e " ${z}╭══════════════════════════════════════════════════════════╮${NC}"
 echo -e " ${z}│$NC$r ⇲ $NC${z} SYSTEM OS     $blue=$NC $MODEL${NC}"
 echo -e " ${z}│$NC$r ⇲ $NC${z} ISP           $blue=$NC $ISP${NC}"
-echo -e " ${z}│$NC$r ⇲ $NC${z} SERVER RAM    $blue=$NC $RAM MB / $USAGERAM MB ${NC}"
+echo -e " ${z}│$NC$r ⇲ $NC${z} SERVER RAM    $blue=$NC $RAM MB | $USAGERAM MB ${NC}"
 echo -e " ${z}│$NC$r ⇲ $NC${z} UPTIME SERVER $blue=$NC $uptime${NC}"
 echo -e " ${z}│$NC$r ⇲ $NC${z} DATE          $blue=$NC $DATEVPS${NC}"
 echo -e " ${z}│$NC$r ⇲ $NC${z} TIME          $blue=$NC $TIMEZONE${NC}"
 echo -e " ${z}│$NC$r ⇲ $NC${z} IP VPS        $blue=$NC $MYIP${NC}"
-echo -e " ${z}│$NC$r ⇲ $NC${z} NS DOMAIN     $blue=$NC $nsdomain${NC}"
-echo -e " ${z}│$NC$r ⇲ $NC${z} DOMAIN        $blue=$NC $domain${NC}"
+echo -e " ${z}│$NC$r ⇲ $NC${z} NS DOMAIN     $blue=$NC $(cat /etc/xray/dns)${NC}"
+echo -e " ${z}│$NC$r ⇲ $NC${z} DOMAIN        $blue=$NC $(cat /etc/xray/domain)${NC}"
 echo -e " ${z}╰══════════════════════════════════════════════════════════╯${NC}"
 echo -e "                ${KIRI} ${CYAN}INFORMATION ACCOUNT${NC} ${KANAN}"
 echo -e "       ───────────────────────────────────────────────${NC}" | lolcat 
