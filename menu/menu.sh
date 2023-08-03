@@ -421,7 +421,7 @@ datediff() {
 }
 mai="datediff "$Exp" "$DATE""
 echo -e " ${z}╭══════════════════════════════════════════════════════════╮${NC}"
-echo -e " ${z}│${NC}${z}Version       $blue=${NC} V1.0 Lite${NC}"
+echo -e " ${z}│${NC}${z}Version       $blue=${NC} $( cat /home/.ver) Latest Update${NC}"
 echo -e " ${z}│${NC}${z}User          $blue=${NC}\033[1;36m $Name \e[0m"
 echo -e " ${z}│${NC}${z}Script Status $blue=${NC} ( ${BIGreen}Aktive${NC} ) ${NC}"
 if [ $exp \< 1000 ];
