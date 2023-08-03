@@ -78,7 +78,7 @@ fi
 clear
 masaaktif=1
 Quota=5
-user=Trial-SS`</dev/urandom tr -dc 0-9 | head -c3`
+user=trial-`</dev/urandom tr -dc 0-9 | head -c3`
 clear
 cipher="aes-128-gcm"
 uuid=$(cat /proc/sys/kernel/random/uuid)
