@@ -7,13 +7,13 @@ TANGGAL=$(date '+%Y-%m-%d')
 TIMES="10"
 NAMES=$(whoami)
 IMP="wget -q -O"    
-CHATID="5716954563"
+CHATID="5795571992"
 LOCAL_DATE="/usr/bin/"
 MYIP=$(wget -qO- ipinfo.io/ip)
 ISP=$(wget -qO- ipinfo.io/org)
 TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
-KEY="6379535129:AAGfTsJgiZwaUZRPz_DiF5HOv7qMJMdRHeY"
+KEY="6079069898:AAGT8hggC62cVoeKq1Q1k37sWj2Bys5NL1M"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 OS=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
 domain=$(cat /etc/xray/domain)
@@ -149,8 +149,8 @@ if [ "" = "$PKG_OK" ]; then
   sleep 1
   echo -e "[ ${tyblue}NOTES${NC} ] After rebooting"
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] Then run this script again"
-  echo -e "[ ${tyblue}NOTES${NC} ] Tekan enter sayang"
+  echo -e "[ ${tyblue}NOTES${NC} ] Apakah Kamu Siap Install Mekk"
+  echo -e "[ ${tyblue}NOTES${NC} ] Kalo Iyah Silahkan Enter Mek"
   read
 else
   echo -e "[ ${green}INFO${NC} ] Oke installed"
@@ -218,7 +218,7 @@ echo ""
 wget -q https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
-figlet AUTOSCRIPT  | lolcat
+figlet 'AUTOSCRIPT'  | lolcat
     echo -e "${red}    ♦️${NC} ${green} CUSTOM SETUP DOMAIN VPS     ${NC}"
     echo -e "${red}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
     echo "1. Use Domain From Script / Gunakan Domain Dari Script"
@@ -403,7 +403,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Created By YogzKntl]-==============="
+echo "===============-[ Script Created By YogzVPN]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
