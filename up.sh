@@ -252,7 +252,7 @@ chmod +x menu-bot
 
 chmod +x shadowsocks
 chmod +x add-ss
-chmod +x triall-ss
+chmod +x trial-ss
 chmod +x del-ss
 chmod +x renew-ss
 chmod +x cek-ss
@@ -283,7 +283,7 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 
 echo -e "      •> PEMBARUAN SCRIPT <•" | lolcat
 
-echo -e "       •> PENAMBAHAN FILE  <•" | lolcat
+echo -e "      •> PENAMBAHAN FILE  <•" | lolcat
 
 echo -e "      •> FIX BUG AND ERROR <•" | lolcat
 
@@ -293,7 +293,7 @@ echo -e "   •> ADD USER LOCK AND UNLOCK <•" | lolcat
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
-echo -e "  ${BG} >>> THANKS TO YogzVpn <<< ${NC}" 
+echo -e "  ${BG} >>> Thanks To YogzVpn <<< ${NC}" 
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo ""
