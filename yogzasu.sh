@@ -20,8 +20,8 @@ domain=$(cat /etc/xray/domain)
 CITY=$(curl -s ipinfo.io/city )
 REPO="https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/"
 #########################
-read -rp "Masukan Ip Vps : " "aipi"
-read -rp "Masukan Password Vps : " "Passswd"
+read -rp "Masukan Ip Vps : " aipi
+read -rp "Masukan Password Vps : " Passswd
 BURIQ () {
     curl -sS https://raw.githubusercontent.com/YOGZKNTL/regip/main/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
