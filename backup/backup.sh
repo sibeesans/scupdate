@@ -13,8 +13,8 @@ LIGHT='\033[0;37m'
 # ==========================================
 AKUN="AKUN SSH"
 TIMES="10"
-CHATID="-923595763"
-KEY="6364118071:AAGM4r2YuCwlJng9l7Gh_DdAKKDmP3U-0Ik"
+CHATID="5795571992"
+KEY="6652133078:AAG-qWWN-SkO8ZwQY9obZTL-0z8xyFWSMqE"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 hariini=`date -d "0 days" +"%Y-%m-%d"`
 clear
@@ -73,7 +73,7 @@ TEXT="
 <b>Link Backup   :</b> $link
 <code>◇━━━━━━━━━━━━━━◇</code>
 <code>Silahkan copy Link dan restore di VPS baru</code>
-<code>BY BOT : @WokszXD</code>
+<code>BY BOT : @YSSHstore</code>
 "
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 echo ""
