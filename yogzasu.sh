@@ -18,10 +18,6 @@ URL="https://api.telegram.org/bot$KEY/sendMessage"
 OS=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
 domain=$(cat /etc/xray/domain)
 CITY=$(curl -s ipinfo.io/city )
-REPO="https://raw.githubusercontent.com/sibeesans/scupdate/main/"
-#########################
-wget -O /etc/banner ${REPO}config/banner >/dev/null 2>&1
-    chmod +x /etc/banner
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -43,15 +39,12 @@ if [ "$(systemd-detect-virt)" == "openvz" ]; then
 		echo "OpenVZ is not supported"
 		exit 1
 fi
-
 localip=$(hostname -I | cut -d\  -f1)
 hst=( `hostname` )
 dart=$(cat /etc/hosts | grep -w `hostname` | awk '{print $2}')
 if [[ "$hst" != "$dart" ]]; then
 echo "$localip $(hostname)" >> /etc/hosts
 fi
-
-
 mkdir -p /etc/xray
 mkdir -p /etc/v2ray
 mkdir -p /etc/{xray,vmess,websocket,vless,trojan,shadowsocks,bot}
@@ -68,7 +61,6 @@ touch /etc/trojan/.trojan.db
 touch /etc/ssh/.ssh.db
 touch /etc/shadowsocks/.shadowsocks.db
 touch /etc/bot/.bot.db
-
 echo -e "[ ${tyblue}NOTES${NC} ] Before we go.. "
 sleep 1
 echo -e "[ ${tyblue}NOTES${NC} ] I need check your headers first.."
