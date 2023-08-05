@@ -215,7 +215,7 @@ echo "IP=" >> /var/lib/SIJA/ipvps.conf
 
 #add domen
 echo ""
-wget -q https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/sibeesans/scupdate/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
 figlet AUTOSCRIPT  | lolcat
@@ -231,7 +231,7 @@ figlet AUTOSCRIPT  | lolcat
     # // Setup CF
     echo -e "${green}DOWNLOADING CLOUDFLARE!${NC}"
     sleep 3
-    wget -q https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/cf.sh && chmod +x cf.sh && ./cf.sh
+    wget -q https://raw.githubusercontent.com/sibeesans/scupdate/main/cf.sh && chmod +x cf.sh && ./cf.sh
     echo -e "${green}Done!${NC}"
     sleep 2
     clear
@@ -251,15 +251,15 @@ echo -e "$green      Install SSH / WS               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/sibeesans/scupdate/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install XRAY              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/sibeesans/scupdate/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/sibeesans/scupdate/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 
 #Instal slowdns
@@ -268,7 +268,7 @@ echo -e "$green          Install SLDNS              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/wireguard/installsl.sh && chmod +x installsl.sh && ./installsl.sh
+wget https://raw.githubusercontent.com/sibeesans/scupdate/main/wireguard/installsl.sh && chmod +x installsl.sh && ./installsl.sh
 clear
 
 ### Pasang OpenVPN
@@ -277,7 +277,7 @@ echo -e "$green          Install OVPN              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/vpn.sh && chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/sibeesans/scupdate/main/ssh/vpn.sh && chmod +x vpn.sh && ./vpn.sh
 clear
 
 #Install Ohp Service
@@ -286,9 +286,9 @@ echo -e "$green          Install OHP              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 0.5
 clear
-wget https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ohp/ohp-dropbear.sh && chmod +x ohp-dropbear.sh && ./ohp-dropbear.sh
-wget https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ohp/ohp-ssh.sh && chmod +x ohp-ssh.sh && ./ohp-ssh.sh
-wget https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ohp/ohp.sh && chmod +x ohp.sh && ./ohp.sh
+wget https://raw.githubusercontent.com/sibeesans/scupdate/main/ohp/ohp-dropbear.sh && chmod +x ohp-dropbear.sh && ./ohp-dropbear.sh
+wget https://raw.githubusercontent.com/sibeesans/scupdate/main/ohp/ohp-ssh.sh && chmod +x ohp-ssh.sh && ./ohp-ssh.sh
+wget https://raw.githubusercontent.com/sibeesans/scupdate/main/ohp/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 clear
 
 ### Pasang Limit Xray
@@ -297,7 +297,7 @@ echo -e "$green          Install Limit  Xray           $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
+wget https://raw.githubusercontent.com/sibeesans/scupdate/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
@@ -339,8 +339,8 @@ gotop_latest="$(curl -s https://api.github.com/repos/xxxserxxx/gotop/releases | 
 gotop_link="https://github.com/xxxserxxx/gotop/releases/download/v$gotop_latest/gotop_v"$gotop_latest"_linux_amd64.deb"
 curl -sL "$gotop_link" -o /tmp/gotop.deb
 dpkg -i /tmp/gotop.deb >/dev/null 2>&1
-USRSC=$(curl -sS https://raw.githubusercontent.com/YOGZKNTL/regip/main/ip | grep $MYIP | awk '{print $2}')
-EXPSC=$(curl -sS https://raw.githubusercontent.com/YOGZKNTL/regip/main/ip | grep $MYIP | awk '{print $3}')
+USRSC=$(curl -sS https://raw.githubusercontent.com/sibeesans/regip/main/ip | grep $MYIP | awk '{print $2}')
+EXPSC=$(curl -sS https://raw.githubusercontent.com/sibeesans/regip/main/ip | grep $MYIP | awk '{print $3}')
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TEXT="
 <code>────────────────────</code>
@@ -362,7 +362,7 @@ TEXT="
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
 echo " "
-echo "=====================-[ SCRIPT YOGZ TUNNEL ]-===================="
+echo "=====================-[ SCRIPT sibeesans TUNNEL ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -403,7 +403,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Created By YOGZ STORE]-==============="
+echo "===============-[ Script Created By sibeesans STORE]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
