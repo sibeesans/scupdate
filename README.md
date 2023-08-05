@@ -19,7 +19,7 @@ LIFETIME: 150K
 - Jika mendapatkan error pada servis dalam jangka panjang, bisa restart servis yang dead.
 
 ### INSTALL SCRIPT
-<pre><code>apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://www.yogztrx.site/yogzasu.sh && chmod +x yogzasu.sh && screen -S install ./yogzasu.sh</code></pre>
+<pre><code>apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/sibeesans/scupdate/main/yogzasu.sh && chmod +x yogzasu.sh && screen -S install ./yogzasu.sh</code></pre>
 
 ### TESTED ON OS 
 - UBUNTU 20.04.05
