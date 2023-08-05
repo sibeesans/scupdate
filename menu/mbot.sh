@@ -15,8 +15,6 @@ echo -e "\e[32mloading...\e[0m"
 clear
 IP=$(wget -qO- icanhazip.com)
 dateToday=$(date +"%Y-%m-%d")
-USRSC=$(curl -sS https://https://raw.githubusercontent.com/YOGZKNTL/regip/main/ip | grep $MYIP | awk '{print $2}')
-
 setup_bot() {
     switch=$(grep -i "switch" /root/.bckupbot | awk '{print $2}')
     echo "Pergi ke @BotFather dan type /newbot untuk membuat bot baru"
