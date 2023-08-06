@@ -181,8 +181,8 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "$green      Install SSH / WS               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
-clear
-wget https://raw.githubusercontent.com/sibeesans/scupdate/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+clearn
+wget https://raw.githubusercontent.com/sibeesans/scupdate/main/ssh/ssh-vpnn.sh && chmod +x ssh-vpnn.sh && ./ssh-vpnn.sh
 #Instal Xray
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install XRAY              $NC"
